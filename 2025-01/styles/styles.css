@@ -1,0 +1,320 @@
+/* Global Styles - Body setup, font, colors */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgb(67, 67, 67);
+    color: #333;
+    font-size: 12px; /* Base font size set to 12px */
+    line-height: 1.5;
+}
+
+/* Masthead Section - Handles the top masthead image and related positioning */
+.masthead {
+    position: relative;
+    max-width: 816px; /* A4 page width in pixels */
+    margin: 0 auto; /* Center the masthead */
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.masthead img {
+    display: block;
+    width: 100%; /* Make image take full width of masthead */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add a border radius for rounded edges */
+}
+
+/* Volume and Issue - Positioned over the masthead */
+.volume-issue {
+    position: absolute;
+    top: 87px; /* Positioned from the top of the masthead */
+    width: 100%;
+    text-align: right; /* Align text to the right */
+    color: white;
+    z-index: 10; /* Ensures it stays on top of the masthead content */
+    font-size: 12px;
+    padding-right: 20px; /* Add padding to the right side */
+    box-sizing: border-box;
+}
+
+/* Image of the Month - Positioned and sized under the masthead */
+.image-of-the-month {
+    margin: -170px auto auto auto; /* Move the image up */
+    max-width: 816px; /* A4 width */
+    height: 300px; /* Set the height */
+    padding: 1px;
+    overflow: hidden; /* Ensure content outside the height is hidden */
+    position: relative;
+    z-index: -1;
+}
+
+.image-of-the-month img {
+    width: 100%;
+    height: 100%; /* Crop the image */
+    object-fit: cover; /* Ensure the image scales and crops while maintaining its aspect ratio */
+}
+
+/* Header Styling */
+.header {
+    font-size: 18px;
+    color: #2d3a4a;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Address Styling */
+address {
+    font-style: normal; /* Prevents italicization */
+}
+
+/* Hyperlink Styling */
+.hyperlink {
+    color: black; /* Make the text color white */
+    text-decoration: underline; /* Ensure links are underlined */
+}
+
+.hyperlink-light {
+    color: white; /* Make the text color white */
+    text-decoration: underline; /* Ensure links are underlined */
+}
+
+/* Signature Styling */
+.signature {
+    font-style: italic;
+    text-align: right !important;
+    margin-top: 20px;
+    padding-right: 5px;
+    display: block;
+    width: 100%;
+}
+
+/* Heading Styles - Size and margin for all headings */
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 14px;
+}
+
+h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.centered-section {
+    text-align: center; /* Center all text within this section */
+    width: 100%; /* Ensure the section takes the full width */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+/* Ensure individual paragraphs are centered */
+.centered-section p {
+    text-align: center !important; /* Force text to center, overriding any other styles */
+    width: 100%; /* Make paragraphs take full width */
+    margin: 10px 0; /* Add margin to create proper gaps between paragraphs */
+    padding: 0; /* Reset padding */
+    display: block; /* Ensure paragraphs behave as block elements */
+}
+
+/* Table Styles - Borderless table setup with thin borders */
+.table-style {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table-style th, .table-style td {
+    padding: 4px 5px;
+    text-align: left;
+    border: 1px solid #dddddd9b; /* Thin border */
+}
+
+.table-style th {
+    font-weight: bold;
+}
+
+.table-style td {
+    vertical-align: top;
+}
+
+/* Financial Table - For displaying financial data with monospace font */
+.financial {
+    margin: 0 0 10px 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.financial td {
+    padding: 0px 10px;
+}
+
+.financial .label {
+    font-family: inherit; /* Use the default font from the parent or browser */
+    text-align: left;
+    white-space: nowrap; /* Ensure text stays on one line */
+}
+
+.financial .value {
+    font-family: "Courier New", Courier, monospace; /* Monospace font for fixed-width */
+    text-align: right; /* Right-align the numeric values */
+    width: 100px; /* Ensure sufficient width for numbers */
+    padding-right: 20px;
+}
+
+/* Layout Sections */
+
+/* Universal Section Width */
+section, .side-by-side-sections, .content-section, .columns {
+    max-width: 816px; /* A4 width */
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Side-by-Side Layout - Flexbox setup for side-by-side sections */
+.side-by-side-sections {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 10px auto;
+}
+
+/* Content Sections - For standard content areas */
+.content-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 816px; /* A4 width */
+}
+
+.content-section p {
+    text-align: justify;
+}
+
+/* Variants for Content Sections */
+.content-section-blue {
+    color: rgb(183, 183, 183);
+    background-color: #122D44;
+}
+
+.content-section-gray {
+    color: #fff;
+    background-color: rgb(100, 100, 100);
+}
+
+.content-section-orange {
+    color: #000000;
+    background-color: rgb(255, 225, 204);
+}
+
+.content-section-green {
+    color: #000000;
+    background-color: rgb(213, 237, 187);
+}
+
+.content-section-light-blue {
+    color: #000000;
+    background-color: rgb(204, 225, 255);
+}
+
+.content-section-yellow {
+    color: #000000;
+    background-color: rgb(255, 245, 204);
+}
+
+/* Two-Column Flow Layout */
+.flowing-columns {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.flowing-columns p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Three-Column Flow Layout */
+.flowing-columns-3 {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.flowing-columns-3 p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Columns Layout - For flexbox-based columned layouts */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 0px auto;
+}
+
+/* Section Header Styling */
+.section-header {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #C46D27;
+}
+
+/* Call-to-Action Button Styling */
+.call-to-action {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action:hover {
+    background-color: #0056b3;
+    box-shadow: none;
+}
+
+.image-frame {
+    border: 3px solid #dddddd;
+    border-radius: 2px;
+    padding: 0px;
+}
+
+/* Unsubscribe Section Styling */
+.unsubscribe {
+    font-size: 10px;
+    color: #8898aa;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .side-by-side-sections, .columns, .masthead {
+        flex-direction: column;
+    }
+
+    .flowing-columns {
+        column-count: 1;
+    }
+}
