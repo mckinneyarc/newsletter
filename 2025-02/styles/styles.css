@@ -25,22 +25,9 @@ body {
     border-radius: 5px; /* Optional: Add a border radius for rounded edges */
 }
 
-/* Volume and Issue - Positioned over the masthead */
-.volume-issue {
-    position: absolute;
-    top: 87px; /* Positioned from the top of the masthead */
-    width: 100%;
-    text-align: right; /* Align text to the right */
-    color: white;
-    z-index: 10; /* Ensures it stays on top of the masthead content */
-    font-size: 12px;
-    padding-right: 20px; /* Add padding to the right side */
-    box-sizing: border-box;
-}
-
 /* Image of the Month - Positioned and sized under the masthead */
 .image-of-the-month {
-    margin: -170px auto auto auto; /* Move the image up */
+    margin: -150px auto auto auto; /* Move the image up */
     max-width: 816px; /* A4 width */
     height: 300px; /* Set the height */
     padding: 1px;
