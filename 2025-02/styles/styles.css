@@ -1,48 +1,54 @@
-/* Global Styles - Body setup, font, colors */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
     margin: 20px 0;
     padding: 10px;
     background-color: rgb(67, 67, 67);
     color: #333;
-    font-size: 12px; /* Base font size set to 12px */
+    font-size: 12px;
     line-height: 1.5;
 }
 
-/* Masthead Section - Handles the top masthead image and related positioning */
 .masthead {
     position: relative;
-    max-width: 816px; /* A4 page width in pixels */
-    margin: 0 auto; /* Center the masthead */
+    max-width: 816px;
+    margin: 0 auto;
     padding: 0px;
     box-sizing: border-box;
 }
 
 .masthead img {
     display: block;
-    width: 100%; /* Make image take full width of masthead */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: Add a border radius for rounded edges */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-/* Image of the Month - Positioned and sized under the masthead */
 .image-of-the-month {
-    margin: -150px auto auto auto; /* Move the image up */
-    max-width: 816px; /* A4 width */
-    height: 300px; /* Set the height */
+    margin: -150px auto auto auto;
+    max-width: 816px;
+    height: 300px;
     padding: 1px;
-    overflow: hidden; /* Ensure content outside the height is hidden */
+    overflow: hidden;
     position: relative;
     z-index: -1;
 }
 
 .image-of-the-month img {
     width: 100%;
-    height: 100%; /* Crop the image */
-    object-fit: cover; /* Ensure the image scales and crops while maintaining its aspect ratio */
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Header Styling */
+.volume-issue {
+    background-color: #fff;
+    padding: 15px 15px;
+    max-width: 816px;
+    color: rgb(183, 183, 183);
+    background-color: #222;
+    text-align: right;
+    font-weight: bold;
+}
+
 .header {
     font-size: 18px;
     color: #2d3a4a;
@@ -50,23 +56,20 @@ body {
     margin: 10px 0;
 }
 
-/* Address Styling */
 address {
-    font-style: normal; /* Prevents italicization */
+    font-style: normal;
 }
 
-/* Hyperlink Styling */
 .hyperlink {
-    color: black; /* Make the text color white */
-    text-decoration: underline; /* Ensure links are underlined */
+    color: black;
+    text-decoration: underline;
 }
 
 .hyperlink-light {
-    color: white; /* Make the text color white */
-    text-decoration: underline; /* Ensure links are underlined */
+    color: white;
+    text-decoration: underline;
 }
 
-/* Signature Styling */
 .signature {
     font-style: italic;
     text-align: right !important;
@@ -76,7 +79,6 @@ address {
     width: 100%;
 }
 
-/* Heading Styles - Size and margin for all headings */
 h1, h2 {
     margin-top: 0;
     margin-bottom: 5px;
@@ -92,21 +94,19 @@ h3, h4, h5, h6 {
 }
 
 .centered-section {
-    text-align: center; /* Center all text within this section */
-    width: 100%; /* Ensure the section takes the full width */
-    margin: 0 auto; /* Center the section horizontally */
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* Ensure individual paragraphs are centered */
 .centered-section p {
-    text-align: center !important; /* Force text to center, overriding any other styles */
-    width: 100%; /* Make paragraphs take full width */
-    margin: 10px 0; /* Add margin to create proper gaps between paragraphs */
-    padding: 0; /* Reset padding */
-    display: block; /* Ensure paragraphs behave as block elements */
+    text-align: center !important;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    display: block;
 }
 
-/* Table Styles - Borderless table setup with thin borders */
 .table-style {
     width: 100%;
     border-collapse: collapse;
@@ -117,7 +117,7 @@ h3, h4, h5, h6 {
 .table-style th, .table-style td {
     padding: 4px 5px;
     text-align: left;
-    border: 1px solid #dddddd9b; /* Thin border */
+    border: 1px solid #dddddd9b;
 }
 
 .table-style th {
@@ -128,7 +128,6 @@ h3, h4, h5, h6 {
     vertical-align: top;
 }
 
-/* Financial Table - For displaying financial data with monospace font */
 .financial {
     margin: 0 0 10px 10px;
     width: 100%;
@@ -140,29 +139,25 @@ h3, h4, h5, h6 {
 }
 
 .financial .label {
-    font-family: inherit; /* Use the default font from the parent or browser */
+    font-family: inherit;
     text-align: left;
-    white-space: nowrap; /* Ensure text stays on one line */
+    white-space: nowrap;
 }
 
 .financial .value {
-    font-family: "Courier New", Courier, monospace; /* Monospace font for fixed-width */
-    text-align: right; /* Right-align the numeric values */
-    width: 100px; /* Ensure sufficient width for numbers */
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    width: 100px;
     padding-right: 20px;
 }
 
-/* Layout Sections */
-
-/* Universal Section Width */
 section, .side-by-side-sections, .content-section, .columns {
-    max-width: 816px; /* A4 width */
+    max-width: 816px;
     margin: 0 auto;
     padding: 10px;
     box-sizing: border-box;
 }
 
-/* Side-by-Side Layout - Flexbox setup for side-by-side sections */
 .side-by-side-sections {
     display: flex;
     gap: 20px;
@@ -170,20 +165,18 @@ section, .side-by-side-sections, .content-section, .columns {
     margin: 10px auto;
 }
 
-/* Content Sections - For standard content areas */
 .content-section {
     background-color: #fff;
     padding: 15px;
     border-radius: 5px;
     margin: 10px auto;
-    max-width: 816px; /* A4 width */
+    max-width: 816px;
 }
 
 .content-section p {
     text-align: justify;
 }
 
-/* Variants for Content Sections */
 .content-section-blue {
     color: rgb(183, 183, 183);
     background-color: #122D44;
@@ -214,7 +207,6 @@ section, .side-by-side-sections, .content-section, .columns {
     background-color: rgb(255, 245, 204);
 }
 
-/* Two-Column Flow Layout */
 .flowing-columns {
     column-count: 2;
     column-gap: 30px;
@@ -226,7 +218,6 @@ section, .side-by-side-sections, .content-section, .columns {
     padding-top: 0;
 }
 
-/* Three-Column Flow Layout */
 .flowing-columns-3 {
     column-count: 3;
     column-gap: 30px;
@@ -238,7 +229,6 @@ section, .side-by-side-sections, .content-section, .columns {
     padding-top: 0;
 }
 
-/* Columns Layout - For flexbox-based columned layouts */
 .columns {
     display: flex;
     justify-content: space-between;
@@ -255,14 +245,12 @@ section, .side-by-side-sections, .content-section, .columns {
     margin: 0px auto;
 }
 
-/* Section Header Styling */
 .section-header {
     font-size: 16px;
     margin-bottom: 10px;
     color: #C46D27;
 }
 
-/* Call-to-Action Button Styling */
 .call-to-action {
     background-color: #007bff;
     color: #fff;
@@ -287,7 +275,6 @@ section, .side-by-side-sections, .content-section, .columns {
     padding: 0px;
 }
 
-/* Unsubscribe Section Styling */
 .unsubscribe {
     font-size: 10px;
     color: #8898aa;
@@ -295,7 +282,6 @@ section, .side-by-side-sections, .content-section, .columns {
     margin-bottom: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .side-by-side-sections, .columns, .masthead {
         flex-direction: column;
