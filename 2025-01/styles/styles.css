@@ -27,7 +27,7 @@ body {
 
 /* Image of the Month - Positioned and sized under the masthead */
 .image-of-the-month {
-    margin: -125px auto auto auto; /* Move the image up */
+    margin: -100px auto auto auto; /* Move the image up */
     max-width: 816px; /* A4 width */
     height: 300px; /* Set the height */
     padding: 1px;
