@@ -282,6 +282,16 @@ section, .side-by-side-sections, .content-section, .columns {
     margin-bottom: 5px;
 }
 
+.padded-list {
+    list-style-type: disc;
+    padding: 0;
+    padding-left: 30px; /* Indent the entire list */
+}
+
+.padded-list li {
+    margin-bottom: 5px; /* Adjust spacing between list items as needed */
+}
+
 @media (max-width: 768px) {
     .side-by-side-sections, .columns, .masthead {
         flex-direction: column;
