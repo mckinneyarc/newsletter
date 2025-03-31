@@ -207,6 +207,11 @@ section, .side-by-side-sections, .content-section, .columns {
     background-color: rgb(255, 245, 204);
 }
 
+.content-section-white {
+    color: #000000;
+    background-color: white;
+}
+
 .flowing-columns {
     column-count: 2;
     column-gap: 30px;
