@@ -1,0 +1,308 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgb(67, 67, 67);
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.masthead {
+    position: relative;
+    max-width: 816px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.masthead img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-of-the-month {
+    margin: -150px auto auto auto;
+    max-width: 816px;
+    height: 300px;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.image-of-the-month img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.volume-issue {
+    background-color: #fff;
+    padding: 15px 15px;
+    max-width: 816px;
+    color: rgb(183, 183, 183);
+    background-color: #222;
+    text-align: right;
+    font-weight: bold;
+}
+
+.header {
+    font-size: 18px;
+    color: #2d3a4a;
+    text-align: center;
+    margin: 10px 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.hyperlink {
+    color: black;
+    text-decoration: underline;
+}
+
+.hyperlink-light {
+    color: white;
+    text-decoration: underline;
+}
+
+.signature {
+    font-style: italic;
+    text-align: right !important;
+    margin-top: 20px;
+    padding-right: 5px;
+    display: block;
+    width: 100%;
+}
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 14px;
+}
+
+h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.centered-section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.centered-section p {
+    text-align: center !important;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+}
+
+.table-style {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table-style th, .table-style td {
+    padding: 4px 5px;
+    text-align: left;
+    border: 1px solid #dddddd9b;
+}
+
+.table-style th {
+    font-weight: bold;
+}
+
+.table-style td {
+    vertical-align: top;
+}
+
+.financial {
+    margin: 0 0 10px 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.financial td {
+    padding: 0px 10px;
+}
+
+.financial .label {
+    font-family: inherit;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.financial .value {
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    width: 100px;
+    padding-right: 20px;
+}
+
+section, .side-by-side-sections, .content-section, .columns {
+    max-width: 816px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.side-by-side-sections {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 816px;
+}
+
+.content-section p {
+    text-align: justify;
+}
+
+.content-section-blue {
+    color: rgb(183, 183, 183);
+    background-color: #122D44;
+}
+
+.content-section-gray {
+    color: #fff;
+    background-color: rgb(100, 100, 100);
+}
+
+.content-section-orange {
+    color: #000000;
+    background-color: rgb(255, 225, 204);
+}
+
+.content-section-green {
+    color: #000000;
+    background-color: rgb(213, 237, 187);
+}
+
+.content-section-light-blue {
+    color: #000000;
+    background-color: rgb(204, 225, 255);
+}
+
+.content-section-yellow {
+    color: #000000;
+    background-color: rgb(255, 245, 204);
+}
+
+.content-section-white {
+    color: #000000;
+    background-color: white;
+}
+
+.flowing-columns {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.flowing-columns p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.flowing-columns-3 {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.flowing-columns-3 p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 0px auto;
+}
+
+.section-header {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #C46D27;
+}
+
+.call-to-action {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action:hover {
+    background-color: #0056b3;
+    box-shadow: none;
+}
+
+.image-frame {
+    border: 3px solid #dddddd;
+    border-radius: 2px;
+    padding: 0px;
+}
+
+.unsubscribe {
+    font-size: 10px;
+    color: #8898aa;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.padded-list {
+    list-style-type: disc;
+    padding: 0;
+    padding-left: 30px; /* Indent the entire list */
+}
+
+.padded-list li {
+    margin-bottom: 5px; /* Adjust spacing between list items as needed */
+}
+
+@media (max-width: 768px) {
+    .side-by-side-sections, .columns, .masthead {
+        flex-direction: column;
+    }
+
+    .flowing-columns {
+        column-count: 1;
+    }
+}
