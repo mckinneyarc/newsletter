@@ -212,6 +212,11 @@ section, .side-by-side-sections, .content-section, .columns {
     background-color: white;
 }
 
+.content-section-seasonal {
+    color: #000000;
+    background-color: #e1a624;
+}
+
 .flowing-columns {
     column-count: 2;
     column-gap: 30px;
