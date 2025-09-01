@@ -313,13 +313,45 @@ img.responsive-image {
 }
 
 .padded-list {
-    list-style-type: disc;
-    padding: 0;
-    padding-left: 30px;
+    list-style: none;          /* remove default bullets */
+    padding-left: 0;           /* reset so we control indent */
+    margin: 6px 0;
 }
 
 .padded-list li {
-    margin-bottom: 5px;
+    position: relative;
+    padding-left: 1.2em;       /* space for custom bullet */
+    margin-bottom: 6px;
+}
+
+.padded-list li::before {
+    content: "•";              /* solid bullet for top level */
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    color: #C46D27;            /* use site accent color */
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Nested UL inside padded-list */
+.padded-list ul {
+    list-style: none;          /* remove default hollow bullets */
+    margin: 6px 0 0 0;
+    padding-left: 1.2em;       /* clean, consistent indent */
+}
+
+.padded-list ul li {
+    margin-bottom: 4px;
+}
+
+.padded-list ul li::before {
+    content: "•";              /* filled chevron for 2nd level */
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    color: #C46D27;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
