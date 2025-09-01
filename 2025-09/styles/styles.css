@@ -331,3 +331,11 @@ img.responsive-image {
         column-count: 1;
     }
 }
+
+.spacer-row td {
+  padding-top: 12px; /* adjust as needed */
+  border: none;
+}
+.spacer-row {
+  height: 12px; /* creates the white space */
+}
