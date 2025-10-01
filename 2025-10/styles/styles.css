@@ -380,6 +380,55 @@ img.responsive-image {
   height: 12px; /* creates the white space */
 }
 
+.content-section blockquote {
+    background: #ffffff;
+    color: #222222;
+    border-left: 5px solid #cc6600;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.ledger-fit .num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.ledger-fit .financial {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.ledger-fit .financial .label,
+.ledger-fit .financial .value {
+    color: #333;
+}
+
+.ledger-fit h3 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.ledger-fit .table-style {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.ledger-fit .table-style th,
+.ledger-fit .table-style td {
+    color: #333;
+}
+
+.ledger-fit .note {
+    font-style: italic;
+    color: #cfcfcf;
+    margin: 4px 0 10px 2px;
+}
+
 @media (max-width: 768px) {
     .side-by-side-sections, .columns, .masthead {
         flex-direction: column;
