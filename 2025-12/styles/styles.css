@@ -212,9 +212,14 @@ section, .side-by-side-sections, .content-section, .columns {
     background-color: white;
 }
 
-.content-section-seasonal {
+.content-section-halloween {
     color: #000000;
     background-color: #e1a624;
+}
+
+.content-section-christmas {
+    color: #ffffff;
+    background-color: #8B1A1A;
 }
 
 .flowing-columns {
