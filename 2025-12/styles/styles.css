@@ -337,7 +337,8 @@ img.responsive-image {
 .padded-list {
     list-style: none;          /* remove default bullets */
     padding-left: 0;           /* reset so we control indent */
-    margin: 6px 0;
+    margin-top: 6px;
+    margin-bottom: 15px;
 }
 
 .padded-list li {
