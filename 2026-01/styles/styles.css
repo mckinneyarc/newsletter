@@ -435,6 +435,33 @@ img.responsive-image {
     margin: 4px 0 10px 2px;
 }
 
+/* Financial report column widths - consistent across monthly and quarterly */
+.ledger-fit .table-style th:nth-child(1),
+.ledger-fit .table-style td:nth-child(1) {
+    width: 45%;  /* Category/Expense column */
+}
+
+.ledger-fit .table-style th:nth-child(2),
+.ledger-fit .table-style td:nth-child(2) {
+    width: 15%;  /* Count/Item Count column */
+    text-align: center;
+}
+
+.ledger-fit .table-style th:nth-child(3),
+.ledger-fit .table-style td:nth-child(3) {
+    width: 20%;  /* Notes column (or Total for 3-column tables) */
+}
+
+.ledger-fit .table-style th:nth-child(4),
+.ledger-fit .table-style td:nth-child(4) {
+    width: 20%;  /* Total column (for 4-column tables) */
+}
+
+/* For Ledger Totals and Summary tables (2-column layout) */
+.ledger-fit .table-style tbody tr td:only-child ~ td:last-child {
+    width: 25%;
+}
+
 @media (max-width: 768px) {
     .side-by-side-sections, .columns, .masthead {
         flex-direction: column;
@@ -442,5 +469,11 @@ img.responsive-image {
 
     .flowing-columns {
         column-count: 1;
+    }
+
+    /* Reset financial table widths on mobile for better wrapping */
+    .ledger-fit .table-style th,
+    .ledger-fit .table-style td {
+        width: auto;
     }
 }
