@@ -1,0 +1,479 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgb(67, 67, 67);
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.masthead {
+    position: relative;
+    max-width: 816px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.masthead img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-of-the-month {
+    margin: -150px auto auto auto;
+    max-width: 816px;
+    height: 300px;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.image-of-the-month img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.volume-issue {
+    background-color: #fff;
+    padding: 15px 15px;
+    max-width: 816px;
+    color: rgb(183, 183, 183);
+    background-color: #222;
+    text-align: right;
+    font-weight: bold;
+}
+
+.header {
+    font-size: 18px;
+    color: #2d3a4a;
+    text-align: center;
+    margin: 10px 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.hyperlink {
+    color: black;
+    text-decoration: underline;
+}
+
+.hyperlink-light {
+    color: white;
+    text-decoration: underline;
+}
+
+.signature {
+    font-style: italic;
+    text-align: right !important;
+    margin-top: 20px;
+    padding-right: 5px;
+    display: block;
+    width: 100%;
+}
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 14px;
+}
+
+h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.centered-section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.centered-section p {
+    text-align: center !important;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+}
+
+.table-style {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table-style th, .table-style td {
+    padding: 4px 5px;
+    text-align: left;
+    border: 1px solid #dddddd9b;
+}
+
+.table-style th {
+    font-weight: bold;
+}
+
+.table-style td {
+    vertical-align: top;
+}
+
+.financial {
+    margin: 0 0 10px 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.financial td {
+    padding: 0px 10px;
+}
+
+.financial .label {
+    font-family: inherit;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.financial .value {
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    width: 100px;
+    padding-right: 20px;
+}
+
+section, .side-by-side-sections, .content-section, .columns {
+    max-width: 816px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.side-by-side-sections {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 816px;
+}
+
+.content-section p {
+    text-align: justify;
+}
+
+.content-section-blue {
+    color: rgb(183, 183, 183);
+    background-color: #122D44;
+}
+
+.content-section-gray {
+    color: #fff;
+    background-color: rgb(100, 100, 100);
+}
+
+.content-section-orange {
+    color: #000000;
+    background-color: rgb(255, 225, 204);
+}
+
+.content-section-green {
+    color: #000000;
+    background-color: rgb(213, 237, 187);
+}
+
+.content-section-light-blue {
+    color: #000000;
+    background-color: rgb(204, 225, 255);
+}
+
+.content-section-yellow {
+    color: #000000;
+    background-color: rgb(255, 245, 204);
+}
+
+.content-section-white {
+    color: #000000;
+    background-color: white;
+}
+
+.content-section-halloween {
+    color: #000000;
+    background-color: #e1a624;
+}
+
+.content-section-christmas {
+    color: #ffffff;
+    background-color: #8B1A1A;
+}
+
+.flowing-columns {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.flowing-columns p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.flowing-columns-3 {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.flowing-columns-3 p:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+    margin: 0px auto;
+}
+
+.column-break-before {
+    break-before: column;                /* standard */
+    -webkit-column-break-before: always; /* Safari/legacy */
+    column-break-before: always;         /* legacy */
+}
+
+.column-break-after {
+    break-after: column;                 /* standard */
+    -webkit-column-break-after: always;  /* Safari/legacy */
+    column-break-after: always;          /* legacy */
+}
+
+.section-header {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #C46D27;
+}
+
+.call-to-action {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action:hover {
+    background-color: #0056b3;
+    box-shadow: none;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-frame {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    border: 3px solid #dddddd;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+img.responsive-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.unsubscribe {
+    font-size: 10px;
+    color: #8898aa;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.padded-list {
+    list-style: none;          /* remove default bullets */
+    padding-left: 0;           /* reset so we control indent */
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+
+.padded-list li {
+    position: relative;
+    padding-left: 1.2em;       /* space for custom bullet */
+    margin-bottom: 6px;
+}
+
+.padded-list li::before {
+    content: "•";              /* solid bullet for top level */
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    color: #C46D27;            /* use site accent color */
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Nested UL inside padded-list */
+.padded-list ul {
+    list-style: none;          /* remove default hollow bullets */
+    margin: 6px 0 0 0;
+    padding-left: 1.2em;       /* clean, consistent indent */
+}
+
+.padded-list ul li {
+    margin-bottom: 4px;
+}
+
+.padded-list ul li::before {
+    content: "•";              /* filled chevron for 2nd level */
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    color: #C46D27;
+    font-weight: 700;
+}
+
+.spacer-row td {
+  padding-top: 12px; /* adjust as needed */
+  border: none;
+}
+
+.spacer-row {
+  height: 12px; /* creates the white space */
+}
+
+.content-section blockquote {
+    background: #ffffff;
+    color: #222222;
+    border-left: 5px solid #cc6600;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.ledger-fit .num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.ledger-fit .financial {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.ledger-fit .financial .label,
+.ledger-fit .financial .value {
+    color: #333;
+}
+
+.ledger-fit h3 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.ledger-fit .table-style {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.ledger-fit .table-style th,
+.ledger-fit .table-style td {
+    color: #333;
+}
+
+.ledger-fit .note {
+    font-style: italic;
+    color: #cfcfcf;
+    margin: 4px 0 10px 2px;
+}
+
+/* Financial report column widths - consistent across monthly and quarterly */
+.ledger-fit .table-style th:nth-child(1),
+.ledger-fit .table-style td:nth-child(1) {
+    width: 45%;  /* Category/Expense column */
+}
+
+.ledger-fit .table-style th:nth-child(2),
+.ledger-fit .table-style td:nth-child(2) {
+    width: 15%;  /* Count/Item Count column */
+    text-align: center;
+}
+
+.ledger-fit .table-style th:nth-child(3),
+.ledger-fit .table-style td:nth-child(3) {
+    width: 20%;  /* Notes column (or Total for 3-column tables) */
+}
+
+.ledger-fit .table-style th:nth-child(4),
+.ledger-fit .table-style td:nth-child(4) {
+    width: 20%;  /* Total column (for 4-column tables) */
+}
+
+/* For Ledger Totals and Summary tables (2-column layout) */
+.ledger-fit .table-style tbody tr td:only-child ~ td:last-child {
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    .side-by-side-sections, .columns, .masthead {
+        flex-direction: column;
+    }
+
+    .flowing-columns {
+        column-count: 1;
+    }
+
+    /* Reset financial table widths on mobile for better wrapping */
+    .ledger-fit .table-style th,
+    .ledger-fit .table-style td {
+        width: auto;
+    }
+}
