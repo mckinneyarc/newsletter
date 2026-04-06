@@ -8,6 +8,10 @@ body {
     line-height: 1.5;
 }
 
+strong, b, th {
+    -webkit-text-stroke: 0.3px;
+}
+
 .masthead {
     position: relative;
     max-width: 816px;
@@ -399,7 +403,7 @@ img.responsive-image {
 }
 
 .ledger-fit .num {
-    text-align: right;
+    text-align: right !important;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
 }
@@ -427,6 +431,18 @@ img.responsive-image {
 .ledger-fit .table-style th,
 .ledger-fit .table-style td {
     color: #333;
+}
+
+.ledger-fit .table-style th {
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.08);
+    -webkit-text-stroke: 0.3px;
+}
+
+.ledger-fit .table-style tfoot td {
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.08);
+    -webkit-text-stroke: 0.3px;
 }
 
 .ledger-fit .note {
