@@ -491,5 +491,17 @@ img.responsive-image {
     .ledger-fit .table-style th,
     .ledger-fit .table-style td {
         width: auto;
+        font-size: 11px;
+        padding: 3px 4px;
+    }
+
+    /* Allow headers to wrap on mobile */
+    .ledger-fit .table-style th {
+        white-space: normal;
+    }
+
+    /* Stack KPI blocks vertically on mobile */
+    .kpi-row {
+        flex-direction: column !important;
     }
 }
