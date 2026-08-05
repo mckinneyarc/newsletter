@@ -483,6 +483,12 @@ img.responsive-image {
         flex-direction: column;
     }
 
+    /* Let long unbroken strings (emails, URLs) wrap inside table cells */
+    .table-style th, .table-style td {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
     .flowing-columns {
         column-count: 1;
     }
